@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>
+    </title>
+</head>
+<body>
+    {% csrf_token %}
+    {% if has_error %}
+        <p> Please enter name and status</p>
+    {% else %}
+   <h1>Submitted sucessfully</h1>
+   <a href="/display">view students</a> 
+    {% endif %}
+
+</body>
+</html>
